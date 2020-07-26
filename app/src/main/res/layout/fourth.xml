@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/playerNumber"
+        android:layout_width="310dp"
+        android:layout_height="262dp"
+        android:layout_marginTop="132dp"
+        android:gravity="center"
+        android:textSize="170sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="373dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="24dp"
+        android:text="こちらの番号に当てはまるものを考えてください"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerNumber"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="182dp"
+        android:layout_height="111dp"
+        android:layout_marginBottom="76dp"
+        android:text="次の人に回す"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

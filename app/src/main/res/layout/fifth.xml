@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="306dp"
+        android:layout_height="74dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_5"
+        android:layout_width="171dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="28dp"
+        android:text="答え合わせ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editAnser"
+        android:layout_width="324dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="12dp"
+        android:digits="01234"
+        android:ems="10"
+        android:hint="※数字だけ入れてください"
+        android:maxLength="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerPlayer1"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <TextView
+        android:id="@+id/answerPlayer5"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editAnser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerPlayer4"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerPlayer3"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerPlayer2"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="269dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:textColor="#FF6060"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

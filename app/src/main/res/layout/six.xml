@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6_3"
+        android:layout_width="233dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="正解しました！"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6_1"
+        app:layout_constraintTop_toBottomOf="@+id/textView6_2"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/textView6_2"
+        android:layout_width="79dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="64dp"
+        android:gravity="bottom"
+        android:text="問"
+        android:textSize="70sp"
+        app:layout_constraintStart_toEndOf="@+id/textView6_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6_1"
+        android:layout_width="111dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#3F51B5"
+        android:textSize="170sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/answerPlayer5"
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/answerPlayer4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerPlayer2"
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerPlayer4"
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/answerPlayer3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerPlayer1"
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6_1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/answerPlayer3"
+        android:layout_width="290dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/showAnswer"
+        android:layout_width="309dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="23dp"
+        android:gravity="center_vertical"
+        android:text="答え"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="224dp"
+        android:gravity="center_vertical"
+        android:text="答え"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/showAnswer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/showAnswer" />
+
+    <TextView
+        android:id="@+id/showResponseText"
+        android:layout_width="99dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:text="予想"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/response"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/showAnswerText"
+        android:layout_width="68dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:gravity="center_vertical"
+        android:text="答え"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/showAnswer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="167dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="44dp"
+        android:text="トップに戻る"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="240dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="※左から順に並んでます（0番から)"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/showAnswer"
+        app:layout_constraintStart_toEndOf="@+id/showAnswerText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
