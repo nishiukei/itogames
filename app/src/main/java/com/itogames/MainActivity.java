@@ -182,8 +182,8 @@ public class MainActivity extends AppCompatActivity {
                         } else {
                             answer_dis.add(input_answer);
                             setTextScreenPlayersAnswer();
-                            miss++;
                             num5++;
+                            miss++;
                         }
                     }
                 }
@@ -211,6 +211,26 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+    public void setTextScreenPlayerNumbers(){
+        TextView number1 = findViewById(R.id.answerPlayerNumber1);
+        TextView number2 = findViewById(R.id.answerPlayerNumber2);
+        TextView number3 = findViewById(R.id.answerPlayerNumber3);
+        TextView number4 = findViewById(R.id.answerPlayerNumber4);
+        TextView number5 = findViewById(R.id.answerPlayerNumber5);
+        for(int i = 0; i < n; i++) {
+            if(i == 0) {
+                number1.setText(String.valueOf(answer.get(i)));
+            }else if(i == 1) {
+                number2.setText(String.valueOf(answer.get(i)));
+            }else if(i == 2) {
+                number3.setText(String.valueOf(answer.get(i)));
+            }else if(i == 3) {
+                number4.setText(String.valueOf(answer.get(i)));
+            }else if(i == 4) {
+                number5.setText(String.valueOf(answer.get(i)));
+            }
+        }
+    }
 
     public void setTextScreenPlayersAnswer(){
         TextView text = findViewById(R.id.response);
@@ -222,10 +242,18 @@ public class MainActivity extends AppCompatActivity {
         TextView text_miss = findViewById(R.id.textView6_1);
         text_miss.setText(String.valueOf(n - miss));
         setTextScreenPlayers();
+        setTextScreenPlayerNumbers();
         setTextScreenPlayersAnswer();
 
         TextView text_show_answer = findViewById(R.id.showAnswer);
         text_show_answer.setText(String.valueOf(order));
 
+        Button button6 = findViewById(R.id.button_6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }

@@ -40,69 +40,69 @@
         android:layout_marginStart="56dp"
         android:layout_marginLeft="56dp"
         android:layout_marginTop="24dp"
+        android:layout_marginBottom="34dp"
         android:textColor="#3F51B5"
         android:textSize="170sp"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/answerPlayer5"
-        android:layout_width="290dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="44dp"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/response"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/answerPlayer4"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/answerPlayer2"
-        android:layout_width="290dp"
+        android:id="@+id/answerPlayer1"
+        android:layout_width="100dp"
         android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/answerPlayer3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/answerPlayer3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer4"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/answerPlayer4"
-        android:layout_width="290dp"
+        android:layout_width="100dp"
         android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/answerPlayer5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/answerPlayer3"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/answerPlayer1"
-        android:layout_width="290dp"
+        android:id="@+id/answerPlayer2"
+        android:layout_width="100dp"
         android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/answerPlayer2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6_1"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/answerPlayer3"
-        android:layout_width="290dp"
-        android:layout_height="30dp"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/answerPlayer4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer3"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -113,7 +113,7 @@
         android:gravity="center_vertical"
         android:text="答え"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/button_6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent" />
@@ -159,11 +159,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_6"
         android:layout_width="167dp"
         android:layout_height="75dp"
         android:layout_marginBottom="44dp"
-        android:text="トップに戻る"
+        android:text="終わる"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -177,6 +177,86 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/showAnswer"
         app:layout_constraintStart_toEndOf="@+id/showAnswerText" />
+
+    <TextView
+        android:id="@+id/answerPlayerNumber1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayerNumber2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/answerPlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/textView6_1" />
+
+    <TextView
+        android:id="@+id/answerPlayerNumber2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayerNumber3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerPlayer2" />
+
+    <TextView
+        android:id="@+id/answerPlayerNumber3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayerNumber4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerPlayer3" />
+
+    <TextView
+        android:id="@+id/answerPlayerNumber4"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayerNumber5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerPlayer4" />
+
+    <TextView
+        android:id="@+id/answerPlayerNumber5"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginBottom="45dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerPlayer5" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
