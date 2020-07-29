@@ -171,19 +171,11 @@ public class MainActivity extends AppCompatActivity {
                             edit.setKeyListener(null);
                             button5.setText("結果発表");
                             button5.setBackgroundColor(Color.MAGENTA);
-                            answer_dis.add(input_answer);
                             answer_text_view.setText("");
-                            num5++;
-                            setTextScreenPlayersAnswer();
-                        } else if (answer.get(input_answer) == order.get(num5 - 1)) {
-                            answer_dis.add(input_answer);
-                            setTextScreenPlayersAnswer();
-                            num5++;
+                            edit.setHint("入力を受け付けました！！");
+                            setMissCounter(input_answer);
                         } else {
-                            answer_dis.add(input_answer);
-                            setTextScreenPlayersAnswer();
-                            num5++;
-                            miss++;
+                            setMissCounter(input_answer);
                         }
                     }
                 }
@@ -191,6 +183,18 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void setMissCounter(int input_answer){
+        if (answer.get(input_answer) == order.get(num5 - 1)) {
+            answer_dis.add(input_answer);
+            setTextScreenPlayersAnswer();
+            num5++;
+        } else {
+            answer_dis.add(input_answer);
+            setTextScreenPlayersAnswer();
+            num5++;
+            miss++;
+        }
+    }
     public void setTextScreenPlayers(){
         TextView player1 = findViewById(R.id.answerPlayer1);
         TextView player2 = findViewById(R.id.answerPlayer2);
