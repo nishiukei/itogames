@@ -1,7 +1,10 @@
 # ito Game  
 [ダウンロードサイト](https://dply.me/c0ovfq)  
 ボードゲーム「ito」をスマホでもできるようにandroidアプリとして作成しました  
-上記リンクからダウンロードできますが、「Deploy Gate」のアプリが必要になります<br>
+上記リンクからダウンロードできますが、「Deploy Gate」のアプリが必要になります  
+QRコードを読み込んで案内の通りに進めてください<br>
+
+<img width="1440" alt="ito-install" src="https://user-images.githubusercontent.com/60930060/88950610-d6add080-d2cf-11ea-9c7d-5230fe3e51cb.png">
 <br>
 
 
@@ -13,8 +16,8 @@
 - バージョンアップを継続中
 
 # 仕様
-- java
-- android studio
+- java14.0.1
+- android studio 4.0.1
 
 # 主な機能
 - プレイヤーの情報の入力(名前)
@@ -38,8 +41,31 @@
 # 操作の手順
 ※「Deploy Gate」というサイトを使ってアプリをあげたのでお手数ですが、Google Play StoreでDeploy Gateのアプリをインストールしてから出ないとスマホにインストールできないようになっています  
 QRコードを読み込ませていただき、案内にしたがって進めていただければ大丈夫です  
-途中で「提供元不明のアプリのインストール」の許可を求められますので、恐れ入りますがそのままインストールのボタンを押していただきますようお願いします
+途中で「提供元不明のアプリのインストール」の許可を求められますので、恐れ入りますがそのままインストールのボタンを押していただきますようお願いします  
 <br>
+<img width="200" alt="ito1" src="https://user-images.githubusercontent.com/60930060/88947936-399d6880-d2cc-11ea-9407-c8b615c57ab4.png">
+<img width="200" alt="ito2" src="https://user-images.githubusercontent.com/60930060/88948782-4f5f5d80-d2cd-11ea-8fa7-3407a7c19d8f.png">  
+右の画面から始まりますので、スタートを押していただき、それからプレイヤーの名前を入力してください  
+参加者がまだいる場合は「次の人の名前を入力」、入力し終わったら「この人たちで遊ぶ」を押してください  
+<br>  
+<img width="200" alt="ito3" src="https://user-images.githubusercontent.com/60930060/88948878-70c04980-d2cd-11ea-82b6-f8425f811561.png">
+<img width="200" alt="ito4" src="https://user-images.githubusercontent.com/60930060/88948912-7f0e6580-d2cd-11ea-98d0-fd8e16d9267e.png">  
+名前が入力し終わりましたら、番号を確認する画面に移ります  
+表示された名前の方は番号を確認するを押してください  
+右のように表示されますので、番号を覚えたら「次の人に回す」を押してください  
+<br>  
+<img width="200" alt="ito5" src="https://user-images.githubusercontent.com/60930060/88948958-8d5c8180-d2cd-11ea-811b-c48dd5bfb10b.png">
+<img width="200" alt="ito6" src="https://user-images.githubusercontent.com/60930060/88949027-a5cc9c00-d2cd-11ea-9599-7b8bba4adfa3.png">  
+話し合って順番が決まりましたら、「小さい順」に表示されたプレイヤーの番号を入力していってください  
+最後まで入力し終えたら、入力ができなくなりますので、「結果発表」を押してください  
+<br>
+
+<img width="200" alt="ito7" src="https://user-images.githubusercontent.com/60930060/88949077-b5e47b80-d2cd-11ea-9dbe-bca36de66dc5.png">  
+
+こちらが結果の画面なのですが、正解数の下にプレイヤーと、割り振られた番号が表示されます  
+予想は先ほど入力した番号で答えはプレイヤーに割り振られた番号になります  
+右から0番目のプレイヤー、1番目のプレイヤー...と続いていきます
+確認が終わりましたら、「終わる」を押して終了させてください  
 
 
 # 今後実装したいこと
