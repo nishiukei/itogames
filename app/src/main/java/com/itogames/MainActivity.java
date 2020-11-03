@@ -4,15 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -148,11 +145,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.fifth);
         setTextScreenPlayers();
 
-        final TextView answer_text_view = findViewById(R.id.textView5);
-        answer_text_view.setText(num5 + "番目に小さいと思う人の番号を入力してください");
         Collections.sort(order);
         final Button button5 = findViewById(R.id.button_5);
         final EditText edit = findViewById(R.id.editAnser);
+        final TextView answer_text_view = findViewById(R.id.textView5);
+        answer_text_view.setText(num5 + "番目に小さいと思う人の番号を入力してください");
 
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,10 +160,10 @@ public class MainActivity extends AppCompatActivity {
                     if (edit.getText().toString().equals("")) {
                         edit.setError("番号をを入力してください");
                     } else {
+                        answer_text_view.setText(num5 + 1 + "番目に小さいと思う人の番号を入力してください");
                         String edit_answer = edit.getText().toString();
                         int input_answer = Integer.parseInt(edit_answer);
                         edit.setText("");
-                        answer_text_view.setText(num5 + "番目に小さいと思う人の番号を入力してください");
                         if(num5 == n){
                             edit.setKeyListener(null);
                             button5.setText("結果発表");
