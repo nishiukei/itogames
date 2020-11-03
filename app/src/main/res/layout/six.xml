@@ -9,16 +9,13 @@
         android:id="@+id/textView6_3"
         android:layout_width="233dp"
         android:layout_height="38dp"
-        android:layout_marginTop="3dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="正解しました！"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/answerPlayer1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView6_1"
-        app:layout_constraintTop_toBottomOf="@+id/textView6_2"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6_2" />
 
     <TextView
         android:id="@+id/textView6_2"
@@ -26,7 +23,7 @@
         android:layout_height="117dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="30dp"
         android:gravity="bottom"
         android:text="問"
         android:textSize="70sp"
@@ -39,41 +36,38 @@
         android:layout_height="205dp"
         android:layout_marginStart="56dp"
         android:layout_marginLeft="56dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="34dp"
         android:textColor="#3F51B5"
         android:textSize="170sp"
-        app:layout_constraintBottom_toTopOf="@+id/answerPlayer1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/answerPlayer5"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginBottom="44dp"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/response"
-        app:layout_constraintStart_toEndOf="@+id/answerPlayer4"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/answerPlayer1"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/answerPlayer2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6_1"
+        app:layout_constraintVertical_bias="0.984" />
+
+    <TextView
+        android:id="@+id/answerPlayer2"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerPlayer3"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/answerPlayer3"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
@@ -84,7 +78,7 @@
 
     <TextView
         android:id="@+id/answerPlayer4"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
@@ -95,14 +89,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/answerPlayer2"
-        android:layout_width="100dp"
+        android:id="@+id/answerPlayer5"
+        android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
+        android:layout_marginBottom="316dp"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/answerPlayer3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerPlayer4"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -160,12 +156,13 @@
 
     <Button
         android:id="@+id/button_6"
-        android:layout_width="167dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="44dp"
+        android:layout_width="128dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="40dp"
         android:text="終わる"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -182,81 +179,82 @@
         android:id="@+id/answerPlayerNumber1"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
+        android:layout_marginRight="117dp"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/answerPlayerNumber2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/answerPlayer1"
-        app:layout_constraintTop_toBottomOf="@+id/textView6_1" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6_1"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/answerPlayerNumber2"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginRight="117dp"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/answerPlayerNumber3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/answerPlayer2" />
 
     <TextView
         android:id="@+id/answerPlayerNumber3"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginRight="117dp"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/answerPlayerNumber4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/answerPlayer3" />
 
     <TextView
         android:id="@+id/answerPlayerNumber4"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginRight="117dp"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/answerPlayerNumber5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/answerPlayer4" />
 
     <TextView
         android:id="@+id/answerPlayerNumber5"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginRight="117dp"
+        android:layout_marginBottom="316dp"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/response"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/answerPlayer5" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:barrierDirection="left" />
+        app:barrierDirection="left"
+        tools:layout_editor_absoluteX="411dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="391dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
