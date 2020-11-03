@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
                     setScreenSixth();
                 } else {
                     if (edit.getText().toString().equals("")) {
-                        edit.setError("番号をを入力してください");
+                        edit.setError("有効な数字を入力してください");
                     } else {
                         answer_text_view.setText(num5 + 1 + "番目に小さいと思う人の番号を入力してください");
                         String edit_answer = edit.getText().toString();
